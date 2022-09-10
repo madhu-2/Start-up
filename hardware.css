@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+.class1{
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+  .About{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}  
+h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.About-col{
+    flex-basis: 31%;
+    background: violet;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 7px;
+    box-sizing: border-box;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: palevioletred;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb() ;
+}
+.content h1{
+    font-size: 48px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+}
+.content .cn{
+    width: 200px;
+    height: 80px;
+    font-size: 18px;
+    background: plum;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color:black;
+    transition: 0.3s ease;
+}
+.cn:hover{
+    background-color: antiquewhite;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: palevioletred;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(plum,powderblue);
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.form input{
+    width: 240px;
+    height:35px;
+    background: transparent;
+    border-bottom: 1 px solid violet;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color:black;
+    font-family: arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 50px;
+    background: violet;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:black;
+    transition: 0.5s ease;
+
+}
+
+.btnn:hover{
+    background: violet;
+    color: black;
+
+}
+.btnn a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: violet;
+
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icon a{
+    text-decoration: none;
+
+}
+.icon{
+    color:antiquewhite;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.5s ease;
+}
+
+.icon:hover{
+    color: antiquewhite;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.box-container .box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color:var(pink)
+}
+
+.box-container .box h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.box-container .box:hover{
+    background-color: plum;
+    cursor: pointer;
+}
+
